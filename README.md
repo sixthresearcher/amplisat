@@ -1,6 +1,14 @@
 
 # AmpliSAT - Amplicon Sequence ASsignment Tools
 
+AmpliSAT are a set of online tools that make easy the analysis of Amplicon Sequencing experiments.
+
+Amplicon Sequencing (AS) is a useful technique in the genotyping of complex gene families, such as MHC, with multiple loci and copy number variation among individuals (Babik et al. 2010; Lighten et al. 2014).
+
+AS is widely used for taxonomic classification by amplifying a variety of marker genes: small subunit rRNA (16/18S SSU), large subunit rRNA (23/25/28S LSU), internal transcribed spacers (ITS/ITS1,ITS2), cytochrome c oxidase subunit 1 (CO1) or plant specific genes (rbcL, matK and trnH-psbA) (Sogin et al. 2006; Kress et al. 2014; Joly et al. 2014).
+
+Another novel and promising application of AS is the study of antibody and T cell receptor (TCR) repertoires in mammals and birds (Baum et al. 2012; Georgiou et al. 2014; Ruggiero et al. 2015; Robinson 2015). 
+
 ## License
 
 [See below paragraph](#license-details)
