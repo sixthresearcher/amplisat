@@ -3,7 +3,7 @@
 
 ## License
 
-[See below paragraph](#License details)
+[See below paragraph](#license-details)
 
 ## Documentation
 
@@ -18,7 +18,7 @@ Remember that it is not necessary to intall AmpliSAT, you can run it from the on
 
 If you need to automatize some pipelines or running some more customize commands,
 then you can install [Docker](https://docs.docker.com/install/) in your server or computer
-and run out-of-the-box the AmpliSAT Docker image from Docker Hub:
+and run out-of-the-box the AmpliSAT Docker image from Docker Hub:<br>
  `docker run -it sixthresearcher/amplisat`
 
 ## Installation in your local computer
