@@ -26,12 +26,10 @@ Clone from the Github repository and install later all the Perl dependencies:
 3. Install EMBOSS package:<br>
  `sudo apt-get install emboss`
 4. Install required Perl modules:<br>
-  ```
-  cpanm File IO OLE Sort Sort::Naturally Archive::Zip Excel Excel::Writer::XLSX Spreadsheet Spreadsheet::XLSX
-  cpanm Text Text::Iconv Net::SFTP::Foreign Statistics::Descriptive
-  cpanm File::FindLib Inline::C threads
-  cpanm Bio::Seq
-  ```
+ `cpanm File IO OLE Sort Sort::Naturally Archive::Zip Excel Excel::Writer::XLSX Spreadsheet Spreadsheet::XLSX`
+ `cpanm Text Text::Iconv Net::SFTP::Foreign Statistics::Descriptive`
+ `cpanm File::FindLib Inline::C threads`
+ `cpanm Bio::Seq`
 5. Add to the PATH the folder where it was installed:<br>
  `export PATH=/amplisat-folder:$PATH`
 6. Test that it is working properly:
