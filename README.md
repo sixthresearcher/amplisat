@@ -60,23 +60,23 @@ Another way to install is to follow the instructions from here: http://evobiolab
 
 The AmpliSAT software has been developed partially as an academic project and partially as a private development.
 
-- The scripts ampliSAS.pl, ampliCHECK.pl, ampliCLEAN.pl, ampliCOMBINE.pl, ampliCOMPARE.pl, ampliQC.pl, ampliLEGACY.pl,
-ampliMERGE.pl, ampliMIX.pl, ampliSIM.pl, add_barcodes.pl and reformat_amplitaxo.pl have been developed
-by Alvaro Sebastian, Magdalena Migalska and Jacek Radwan (Copyright 2015-2020) and they have the following license:
-  Permission to use, copy, modify and distribute any part of this program for any educational, research, profit and non-profit purposes,
-  without fee, and without a written agreement is hereby granted, provided that this paragraph and the following license paragraphs appear in all copies.
-- The scripts ampliTCR.pl and ampliCDR3.pl have been developed
+- The scripts **ampliSAS.pl, ampliCHECK.pl, ampliCLEAN.pl, ampliCOMBINE.pl, ampliCOMPARE.pl, ampliQC.pl, ampliLEGACY.pl,
+ampliMERGE.pl, ampliMIX.pl, ampliSIM.pl, add_barcodes.pl and reformat_amplitaxo.pl** have been developed
+by Alvaro Sebastian, Magdalena Migalska and Jacek Radwan (Copyright 2015-2020) and they have the following license:<br>
+  *Permission to use, copy, modify and distribute any part of this program for any educational, research, profit and non-profit purposes,
+  without fee, and without a written agreement is hereby granted, provided that this paragraph and the following license paragraphs appear in all copies.*
+- The scripts **ampliTCR.pl and ampliCDR3.pl** have been developed
 by Alvaro Sebastian, Magdalena Migalska and Jacek Radwan (Copyright 2015-2020) and they have the following license when used for the analysis of any data excluding human and mouse data:
-  Permission to use, copy, modify and distribute any part of this program for any educational, research, profit and non-profit purposes,
-  without fee, and without a written agreement is hereby granted, provided that this paragraph and the following license paragraphs appear in all copies.
-- The scripts ampliTCR.pl and ampliCDR3.pl have been developed
+  *Permission to use, copy, modify and distribute any part of this program for any educational, research, profit and non-profit purposes,
+  without fee, and without a written agreement is hereby granted, provided that this paragraph and the following license paragraphs appear in all copies.*
+- The scripts **ampliTCR.pl and ampliCDR3.pl** have been developed
 by Alvaro Sebastian (Copyright 2015-2020) and they have the following license when used for the analysis of human or mouse data:
-  Permission to use, copy, modify and distribute any part of this program for any educational, research and non-profit purposes, by non-profit institutions only,
-  without fee, and without a written agreement is hereby granted, provided that this paragraph and the following license paragraphs appear in all copies.
-- The scripts ampliCANCER.pl, ampliHLA.pl, ampliON.pl, ampliTAXO.pl, annotate_variants.pl, common_variants.pl, compare_variants.pl and filter_somatic_variants.pl have been developed
+  *Permission to use, copy, modify and distribute any part of this program for any educational, research and non-profit purposes, by non-profit institutions only,
+  without fee, and without a written agreement is hereby granted, provided that this paragraph and the following license paragraphs appear in all copies.*
+- The scripts **ampliCANCER.pl, ampliHLA.pl, ampliON.pl, ampliTAXO.pl, annotate_variants.pl, common_variants.pl, compare_variants.pl and filter_somatic_variants.pl** have been developed
 by Alvaro Sebastian (Copyright 2015-2020) and they have the following license when used for any kind of data:
-  Permission to use, copy, modify and distribute any part of this program for any educational, research and non-profit purposes, by non-profit institutions only,
-  without fee, and without a written agreement is hereby granted, provided that this paragraph and the following license paragraphs appear in all copies.
+  *Permission to use, copy, modify and distribute any part of this program for any educational, research and non-profit purposes, by non-profit institutions only,
+  without fee, and without a written agreement is hereby granted, provided that this paragraph and the following license paragraphs appear in all copies.*
 
 Those desiring to incorporate this work into commercial products or use for commercial purposes should contact Alvaro Sebastian using the following email address: sixthresearcher@gmail.com
 
