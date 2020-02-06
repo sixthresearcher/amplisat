@@ -21,20 +21,20 @@ If you cannot run AmpliSAT with the Docker image, here are the instructions to i
 Clone from the Github repository and install later all the Perl dependencies:
 1. Install git and few other utilities required:<br>
  `sudo apt-get install git wget curl unzip cpanminus expat libexpat1-dev`
-- Clone from the Github repo:<br>
+2. Clone from the Github repo:<br>
  `git clone https://github.com/sixthresearcher/amplisat.git`
-- Install EMBOSS package:<br>
+3. Install EMBOSS package:<br>
  `sudo apt-get install emboss`
-- Install required Perl modules:<br>
+4. Install required Perl modules:<br>
   ```
   cpanm File IO OLE Sort Sort::Naturally Archive::Zip Excel Excel::Writer::XLSX Spreadsheet Spreadsheet::XLSX
   cpanm Text Text::Iconv Net::SFTP::Foreign Statistics::Descriptive
   cpanm File::FindLib Inline::C threads
   cpanm Bio::Seq
   ```
-- Add to the PATH the folder where it was installed:<br>
+5. Add to the PATH the folder where it was installed:<br>
  `export PATH=/amplisat-folder:$PATH`
-- Test that it is working properly:
+6. Test that it is working properly:
  ``
 
 Another way to install is to follow the instructions from here:
