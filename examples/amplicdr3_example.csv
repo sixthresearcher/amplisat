@@ -1,0 +1,9 @@
+>marker,primer_f,primer_f_id
+TCRB,CAACGCAGAG(NNNNNNNNNNNNNNNN),FWD_RACE
+>marker,primer_r,primer_r_id,primer_r_dist
+TCRB,CTCAGATCCT,REV_RACE,31
+
+>sample
+s092_A
+s092_B
+s092_C

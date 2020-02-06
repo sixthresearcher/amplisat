@@ -1,0 +1,8 @@
+>marker,length,primer_f,primer_r,gene,feature,species
+MHC2,203,GAGTGTCATTTCTCCAACGGGA,TCACCTCTCCKCTCCACAGTGAA,DRB MHC2,exon 2,Spermophilus suslicus
+>sample,tag_f,tag_r
+S1,AACGCG,AAGACA
+S2,TCACTC,CGTCAC
+S3,CTTGGT,TTGAGT
+S4,TGGAAC,TAACAT
+S5,CGAATC,GGTCGA
