@@ -242,7 +242,7 @@ execute_weblogo
 ######################################################################################################
 
 # Routes to binary files and databases
-my $TOOLSDIR = dirname (__FILE__).'/tools/';
+my $TOOLSDIR = dirname(__FILE__).'/tools/';
 my $BLASTPEXE = $TOOLSDIR.'blastp -task blastp'; # -num_threads 4";
 my $BLASTPSHORTEXE = $TOOLSDIR.'blastp -task blastp-short'; # -num_threads 4";
 my $BLASTNEXE = $TOOLSDIR.'blastn -task blastn'; # -num_threads 4";

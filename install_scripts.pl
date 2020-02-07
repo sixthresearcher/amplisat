@@ -44,6 +44,7 @@ my $AUTHOR = "Alvaro Sebastian";
 my $DESCRIPTION = "Test automatically the correct working of AmpliSAT scripts.";
 
 use Getopt::Long;
+use File::Basename;
 
 # All variables must be declared before their use
 use strict;
@@ -57,7 +58,7 @@ my $COMMAND_LINE = $0." ".join(" ",@ARGV);
 my @AMPLISAT_TOOLS = ('amplisas','amplicheck','amplilegacy','amplitcr','amplicdr3','amplimerge','ampliclean','amplimix','amplicompare','amplicombine', 'amplisim', 'install_scripts', 'reformat_amplitaxo'); # 'add_barcodes','ampliqc');
 my @OPTIONAL_TOOLS = ('amplicancer','amplitaxo','amplihla' );
 # Data examples location
-my $EXAMPLE_DIR = './examples';
+my $EXAMPLE_DIR = dirname(__FILE__).'/examples';
 # Routes to binary files
 my $EXTERNAL_TOOLS_DIR = './lib/Bio/tools';
 # Routes to required additional files
