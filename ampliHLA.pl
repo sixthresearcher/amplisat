@@ -258,9 +258,12 @@ if (defined($INP_update)){
 
 	# Downloads HLA alleles from IMGT/HLA database (genomic and CDS sequences)
 	my (@allele_files, @hla_all_seqs, @hla_all_headers);
-	foreach my $data_type (('nuc','gen')){
+	foreach my $data_type (('gen','nuc')){
 		my $alleles_file = $DEFAULT_PARAMS->{$data_type}{'allele_file'};
 		if ($alleles_file =~ /seq2hla/){
+			push(@allele_files,$alleles_file);
+			printf("\nReading '%s' HLA alleles reference file.\n",$alleles_file);
+			printf("\tCurrent version contains %d allele sequences.\n", scalar count_seqs_from_fasta($alleles_file));
 			next;
 		}
 		my $alleles_dir = $DEFAULT_PARAMS->{$data_type}{'allele_path'};
