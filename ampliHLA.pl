@@ -482,10 +482,15 @@ if ($INP_analysis_type eq 'amplisas'){
 		}
 	}
 	# Checks and reads alleles file
-	my $alleledata;
+	my ($alleledata, $alleledata_);
 	if (defined($INP_allele_file) && -e $INP_allele_file){
 		print "\nReading HLA allele sequences from '$INP_allele_file'.\n";
-		$alleledata = read_allele_file($INP_allele_file,['no warnings']);
+		$alleledata_ = read_allele_file($INP_allele_file,['no warnings']);
+		# Replaces allele names
+		foreach my $allele_name (keys %{$alleledata_}){
+			$allele_name =~ /HLA:HLA\d+\s(.+?)\s/; # Ex. HLA:HLA00132 B*07:02:01 3323 bp
+			$alleledata->{$1} = $alleledata_->{$allele_name};
+		}
 	}
 	# Runs AmpliSAS in auto mode before HLA typing if reads are given as input file
 	# my $amplisas_results;
@@ -595,7 +600,8 @@ if ($INP_analysis_type eq 'amplisas'){
 				next;
 			}
 			foreach my $hla_allele (split(' \| ',$md5_to_name->{$md5})) {
-				if ($hla_allele =~ /HLA:HLA\d+ (\w+)\*.+/) { # Ex. HLA:HLA00132 B*07:02:01 3323 bp, exclude non expressed alleles or rare ones ex. HLA:HLA02369 A*03:21N 3095 bp
+# 				if ($hla_allele =~ /HLA:HLA\d+ (\w+)\*.+/) { # Ex. HLA:HLA00132 B*07:02:01 3323 bp, exclude non expressed alleles or rare ones ex. HLA:HLA02369 A*03:21N 3095 bp
+				if ($hla_allele =~ /^(\w+)\*/) { # Ex. HLA:HLA00132 B*07:02:01 3323 bp, exclude non expressed alleles or rare ones ex. HLA:HLA02369 A*03:21N 3095 bp
 					$count_hla_allele_loci{$1}++;
 				}
 			}
@@ -616,7 +622,8 @@ if ($INP_analysis_type eq 'amplisas'){
 					next;
 				}
 				foreach my $hla_allele (split(' \| ',$md5_to_name->{$md5})) {
-					if ($hla_allele =~ /HLA:HLA\d+ (\w+)\*(\d+)\:(\d+)\:?([\d\:]+[NLSCAQ]?)?/) { # Ex. Ex. HLA:HLA00132 B*07:02:01 3323 bp
+					#if ($hla_allele =~ /HLA:HLA\d+ (\w+)\*(\d+)\:(\d+)\:?([\d\:]+[NLSCAQ]?)?/) { # Ex. HLA:HLA00132 B*07:02:01 3323 bp
+					if ($hla_allele =~ /(\w+)\*(\d+)\:(\d+)\:?([\d\:]+[NLSCAQ]?)?/) { # Ex. B*07:02:01 3323 bp
 						# Discards rare human alelles
 						if ($hla_locus eq $1 && in_array($HLA_FREQUENT_ALLELES->{$hla_locus},"$1*$2:$3")) {
 							foreach my $sample_name (sort {$a cmp $b} keys %{$amplisas_results->{$marker_name}{'assignments'}{$md5}}){
